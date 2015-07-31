@@ -1,0 +1,25 @@
+{
+  "name": "promethean-backend",
+  "version": "0.0.1",
+  "description": "backend for promethean",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TyGriffiths/promethean.git"
+  },
+  "keywords": [
+    "promethean"
+  ],
+  "author": "Scott Blanch, Ty Griffiths",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TyGriffiths/promethean/issues"
+  },
+  "homepage": "https://github.com/TyGriffiths/promethean#readme",
+  "dependencies": {
+    "express": "^4.13.2"
+  }
+}
