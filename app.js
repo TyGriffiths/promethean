@@ -1,22 +1,32 @@
 
-var serverPort = 8000;
+var serverPort = 8001;
+var dbPort = 20000;
+
+(function(serverPort, dbPort){
+
+  var express = require('express'),
+      app = express(),
+      bodyParser = require('body-parser'),
+      mongoose = require('mongoose'),
+      db = mongoose.connect('mongodb://localhost:' +  dbPort);
 
 
-(function(port){
+  // parse application/x-www-form-urlencoded 
+  app.use(bodyParser.urlencoded({ extended: false }));
+   
+  // parse application/json 
+  app.use(bodyParser.json());
 
-var express = require('express');
-var app = express();
+  //client requests
+  require('./client_requests/static_files')(app, express);
+  require('./client_requests/rest_api')(app, mongoose, db);
 
-//client requests
-require('./client_requests/static_files')(app, express);
-require('./client_requests/rest_api')(app, express);
+  //run app
 
-//run app
-
-app.listen(serverPort, function(){
-	console.log('listening on port %s', serverPort);
-})
+  app.listen(serverPort, function(){
+    console.log('listening on port %s', serverPort);
+  })
 
 
 
-})(serverPort);
+})(serverPort, dbPort);

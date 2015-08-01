@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/TyGriffiths/promethean#readme",
   "dependencies": {
-    "express": "^4.13.2"
+    "body-parser": "^1.13.3",
+    "express": "^4.13.2",
+    "mongoose": "^4.1.0"
   }
 }
