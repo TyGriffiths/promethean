@@ -1,0 +1,1 @@
+mongod --dbpath C:\Users\sblanch\Desktop\database --port 20000
