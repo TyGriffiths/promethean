@@ -75,6 +75,7 @@ WARNING: Respond.js doesn't work if you view the page via file:// -->
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teach <span class="caret"></span></a>
                         <ul class="dropdown-menu">
+                            <li><a href="teacher-profile.html">Teacher Profile</a></li>
                             <li><a href="website-contact.html">Become A Teacher</a></li>
                             <li><a href="student-teacherDirectory.html">Teacher Directory</a></li>
                         </ul>
@@ -183,11 +184,37 @@ WARNING: Respond.js doesn't work if you view the page via file:// -->
                             </ul>
                              <li class="list-group-item media v-middle">
                                 <div class="media-body">
-                                    <a class="text-subhead list-group-link"><strong>Upload Proof</strong></a>
-                                    <br>
-                                    <button class="btn btn-primary"><a href="">Choose File</a></button>
-                                   
-                                    <button class="btn btn-primary"><a href="">Insert Link</a></button>
+                                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                      Upload Proof
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                      <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Upload Proof</h4>
+                                          </div>
+                                          <div class="modal-body">
+                                            <form>
+                                              <div class="form-group">
+                                                <label for="addLink">Add URL</label>
+                                                <input type="link" class="form-control" id="addLink" placeholder="e.g. Promethean.education">
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="exampleInputFile">File input</label>
+                                                <input type="file" id="exampleInputFile">
+                                                <p class="help-block">Image, Video, Audio, Document</p>
+                                              </div>
+                                            </form>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
                                 </div>
                             </li>
                         </div>
