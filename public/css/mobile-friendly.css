@@ -1,0 +1,38 @@
+@media (min-width: 768px){
+	.badgeLearnerView{
+		margin-left: 11%;
+	}
+}
+
+@media (min-width: 768px){
+	.badgeLearnerViewBootstrap{
+		margin-left: -19%;
+	}
+}
+
+@media (min-width: 768px){
+	.badgeLearnerViewHTML5{
+		margin-left: -28%;
+	}
+}
+
+@media (min-width: 768px){
+	.badgeLearnerViewSEO{
+		margin-left: 8%;
+	}
+}
+
+@media (min-width: 768px){
+	.cover .overlay .overlay .overlay-full{
+		height: auto;
+	}
+}
+
+/* index.html */
+@media (min-width: 768px){
+	.diagramIndex{
+		margin-left: 1em;
+	}
+	
+}
+

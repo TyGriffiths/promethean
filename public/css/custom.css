@@ -1,0 +1,32 @@
+/* badges-learnerView-angularjs.html page */
+.badgeLearnerView{
+	height: 150px; 
+	margin-left: 25%;
+}
+
+/* badges-learnerView-bootstrap.html page */
+.badgeLearnerViewBootstrap{
+	height: 150px; 
+	margin-left: 6%;
+}
+
+/* badges-learnerView-HTML5.html page */
+.badgeLearnerViewHTML5{
+	height: 150px; 
+	margin-left: 0%;
+}
+
+/* badges-learnerView-seo.html page */
+.badgeLearnerViewSEO{
+	height: 150px; 
+	margin-left: 0%;
+}
+
+/* index.html */
+.diagramIndex{
+	margin-left: 3em;
+}
+.teacherButtonIndex{
+	padding-left: 2.5em; 
+	padding-right: 2.5em;
+}

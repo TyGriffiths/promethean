@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Promethean</title> 
+    <title>Promethean</title>  
     <!-- Compressed Vendor BUNDLE
     Includes vendor (3rd party) styling such as the customized Bootstrap and other 3rd party libraries used for the current theme/module -->
     <link href="css/vendor.min.css" rel="stylesheet">
@@ -45,6 +45,9 @@ WARNING: Respond.js doesn't work if you view the page via file:// -->
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <!--Mobile Friendly CSS-->
+    <link rel="stylesheet" type="text/css" href="css/mobile-friendly.css">
 </head>
 <body>
     <!-- Fixed navbar -->
@@ -133,7 +136,7 @@ WARNING: Respond.js doesn't work if you view the page via file:// -->
     </div>
     <div class="parallax cover overlay cover-image-full home">
         <img class="parallax-layer" src="images/photodune-4161018-group-of-students-m.jpg" alt="Learning Cover" />
-        <div class="parallax-layer overlay overlay-full overlay-bg-white bg-transparent" data-speed="8" data-opacity="true">
+        <div class="parallax-layer overlay overlay-full overlay-bg-white bg-transparent" data-speed="8" data-opacity="true" style="margin-top: -10%;">
             <div class="v-center">
                 <div class="page-section overlay-bg-white-strong relative paper-shadow" data-z="1">
                     <h1 class="text-display-2 margin-v-0-15 display-inline-block">Learning, Accreditation, Teaching, Employment</h1>
@@ -306,13 +309,13 @@ WARNING: Respond.js doesn't work if you view the page via file:// -->
                 <h3 class="text-display-1">How the System Works</h3>
                 <p class="lead text-muted">In A Nutshell</p>
             </div>
-                <a type="button" class="btn btn-lg btn-primary col-md-offset-5" style="padding-left: 2.5em; padding-right: 2.5em;" data-toggle="tooltip" data-placement="right" title="If learners are interested, they may hire a teacher or institution to assist them in earning badges." href="teacher-profile.html">Teachers / Institutions</a>          
+                <a type="button" class="btn btn-lg btn-primary col-md-offset-5 teacherButtonIndex" data-toggle="tooltip" data-placement="right" title="If learners are interested, they may hire a teacher or institution to assist them in earning badges." href="teacher-profile.html">Teachers / Institutions</a>          
             <div class="col-md-12">  
-                <a type="button" class="btn btn-lg btn-primary col-md-offset-2 col-md-1" style="margin-top: 13%;" data-toggle="tooltip" data-placement="left" title="Anyone interested in learning anything may earn Promethean badges by proving competence in a badge's criteria. Learning can be done at your pace, at any location, from any source, and proven in any way." href="badges-directory.html">Learners</a>          
-                <img class="col-md-6" style="margin-left: 3em;" src="images/employment-learning-process.gif">
-                <a type="button" class="btn btn-lg btn-primary col-md-1" style="margin-top: 11.5%;" data-toggle="tooltip" data-placement="right" title="Promethean badges store learning data. That data will include what criteria was required to earn the badge, proof of competency in that criteria, who issued the badge and what their credentials are, and, if necessary, a date regarding when the badge will need to be renewed." href="badges-directory.html">Promethean <br/> Badges</a>  
+                <a type="button" class="btn btn-lg btn-primary col-md-offset-1 col-md-2" style="margin-top: 13%;" data-toggle="tooltip" data-placement="left" title="Anyone interested in learning anything may earn Promethean badges by proving competence in a badge's criteria. Learning can be done at your pace, at any location, from any source, and proven in any way." href="badges-directory.html">Learners</a>          
+                <img class="col-md-6 diagramIndex" src="images/employment-learning-process.gif">
+                <a type="button" class="btn btn-lg btn-primary col-md-2" style="margin-top: 11.5%;" data-toggle="tooltip" data-placement="right" title="Promethean badges store learning data. That data will include what criteria was required to earn the badge, proof of competency in that criteria, who issued the badge and what their credentials are, and, if necessary, a date regarding when the badge will need to be renewed." href="badges-directory.html">Promethean <br/> Badges</a>  
             </div>
-            <a type="button" class="btn btn-lg btn-primary col-md-offset-5" style="padding-left: 2em; padding-right: 2em;" data-toggle="tooltip" data-placement="left" title="Learners may display their Promethean badges to employers to prove capabilities and personality. Additionally, employers and recruiters are able to search for skills related to positions in their company and find learners that have earned badges in those skills." href="employer-profile.html">Employers / Recruiters</a>
+            <a type="button" class="btn btn-lg btn-primary col-md-offset-4" style="padding-left: 2em; padding-right: 2em;" data-toggle="tooltip" data-placement="left" title="Learners may display their Promethean badges to employers to prove capabilities and personality. Additionally, employers and recruiters are able to search for skills related to positions in their company and find learners that have earned badges in those skills." href="employer-profile.html">Employers / Recruiters</a>
         </div>
     </div>
 <!--Social Proof
@@ -487,6 +490,8 @@ WARNING: Respond.js doesn't work if you view the page via file:// -->
         }
     };
     </script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- Separate Vendor Script Bundles -->
     <script src="js/vendor-core.min.js"></script>

@@ -45,6 +45,9 @@ WARNING: Respond.js doesn't work if you view the page via file:// -->
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <!--Mobile Friendly CSS-->
+    <link rel="stylesheet" type="text/css" href="css/mobile-friendly.css">
 </head>
 <body>
     <!-- Fixed navbar -->
@@ -168,7 +171,7 @@ WARNING: Respond.js doesn't work if you view the page via file:// -->
 
 
 
-    <div class="col-md-3" style="background-color: #E55800; margin-top: 20px; margin-left: 75px; padding-bottom: 10px;">
+    <div class="col-md-4" style="background-color: #E55800; margin-top: 20px; margin-left: 75px; padding-bottom: 10px;">
         <div>
             <h2><center>Contact Us</center></h2>
             <form class="form-horizontal" role="form" method="post" action="index.php">
@@ -185,13 +188,13 @@ WARNING: Respond.js doesn't work if you view the page via file:// -->
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="message" class="col-sm-2 control-label">Message</label>
+                    <label for="message" class="col-sm-2 col-md-3 control-label">Message</label>
                     <div class="col-sm-10">
                         <textarea class="form-control" rows="4" name="message"></textarea>
                     </div>
                 </div>
                 <div class="form-group">
-                    <div class="col-sm-10 col-sm-offset-2">
+                    <div class="col-sm-10 col-sm-offset-2 col-md-offset-0">
                         <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
                     </div>
                 </div>
@@ -204,15 +207,13 @@ WARNING: Respond.js doesn't work if you view the page via file:// -->
         </div>
     </div>
 
-    <div style="margin-left: 50px;">
-        <button class="col-md-offset-1 col-md-8 btn btn-primary" style="font-size: 2.5em; color: #E55800; margin-top: 20px;"><a href="website-contact.html"><strong>Interested In Teaching? Contact Us For More Infomation</strong></a></button>
-    </div>
-
 
     <!-- Footer -->
+<!--Footer
     <footer class="footer">
         <strong>Promethean</strong> v1.0.0 &copy; Copyright 2015
     </footer>
+-->
     <!-- // Footer -->
     <!-- Inline Script for colors and config objects; used by various external scripts; -->
     <script>
