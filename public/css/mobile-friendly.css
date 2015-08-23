@@ -1,30 +1,48 @@
+/* Most Badge Pages */
 @media (min-width: 768px){
 	.badgeLearnerView{
 		margin-left: 11%;
 	}
 }
+@media (min-width: 1720px){
+	.badgeLearnerView{
+		margin-left: 22%;
+	}
+}
 
+/* badgeLearnerViewBootstrap.html page */
 @media (min-width: 768px){
 	.badgeLearnerViewBootstrap{
 		margin-left: -19%;
 	}
 }
+@media (min-width: 1720px){
+	.badgeLearnerViewBootstrap{
+		margin-left: 0%;
+	}
+}
 
+/* badgeLearnerViewHTML5.html page */
 @media (min-width: 768px){
 	.badgeLearnerViewHTML5{
 		margin-left: -28%;
 	}
 }
+@media (min-width: 1720px){
+	.badgeLearnerViewHTML5{
+		margin-left: -6%;
+	}
+}
 
+/* badgeLearnerViewSEO.html page */
 @media (min-width: 768px){
 	.badgeLearnerViewSEO{
 		margin-left: 8%;
 	}
 }
-
-@media (min-width: 768px){
-	.cover .overlay .overlay .overlay-full{
-		height: auto;
+@media (min-width: 1720px){
+	.badgeLearnerViewSEO{
+		margin-left: 20%;
 	}
 }
 
